@@ -16,7 +16,7 @@ after_success:
 
 
   # login to docker CLI
-  - echo "$docker_password" | docker login -u "$docker_id" --passowrd-stdin
+  - echo "$docker_password" | docker login -u "$docker_id" --password-stdin
   # Take images and push images to docker hub 
   - docker push om21/multi-client
   - docker push om21/multi-nginx
